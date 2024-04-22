@@ -3,7 +3,7 @@ The source code of paper "VBF Net: Boundary Completion in Full Waveform Inversio
   
 Steps:  
 1  
-You should create these two folders under "VBF-dev":  
+Create these two folders under "VBF-dev":  
 model_ws # models saved  
 results  # results saved  
 
