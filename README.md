@@ -13,7 +13,7 @@ pip install opencv-python
 pip install lpips  
 
 3  
-Configuring "config.yml"  
+Configure "config.yml"  
 
 4  
-run "VBF.py"  
+Run "VBF.py"  
