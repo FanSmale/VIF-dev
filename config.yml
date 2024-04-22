@@ -1,0 +1,47 @@
+MODEL_PARA_PATH: model_ws
+# # GAN: 0 # 1: True, 0: False
+
+# GAN_LOSS: 'nsgan'
+
+D2G_LR: 0.1                   # discriminator/generator learning rate ratio
+# BETA1: 0.0                    # adam optimizer beta1
+# BETA2: 0.9                    # adam optimizer beta2
+
+BASE_LOSS_WEIGHT: 1           # base loss weight
+ADV_LOSS_WEIGHT: 0.1          # adversarial loss weight
+# FM_LOSS_WEIGHT: 10            # feature-matching loss weight
+# # FM_LOSS_WEIGHT: 1            # feature-matching loss weight
+
+# SEG dataset
+LR: 2e-4                      # learning rate
+IN_CHANNELS: 29
+IN_DSP_DIM: [400, 301]
+OUT_CHANNELS: 1
+OUT_DSP_DIM: [201, 301]
+BATCH_SIZE: 10
+MAX_EPOCHS: 600 # can take 400 for 'SEGReal'
+SAVE_EVERY_EPOCHS: 200 # save the models every SAVE_EVERY_EPOCHS epochs
+
+# # OpenFWI dataset
+# LR: 1e-4                      # learning rate
+# IN_CHANNELS: 5
+# IN_DSP_DIM: [1000, 70]
+# OUT_CHANNELS: 1
+# OUT_DSP_DIM: [70, 70]
+# BATCH_SIZE: 10
+# MAX_EPOCHS: 300
+# SAVE_EVERY_EPOCHS: 100 # save the models every SAVE_EVERY_EPOCHS epochs
+
+DATASET_PATH: '<dataset filename>'
+
+# 1: SToV, 2: SToC, 3: SToV & SToC, 4: VCToV with trained SToV & SToC, 5: joint
+# Recommended Order: 1, 2, 4
+MODEL_TYPE: 1
+# MODEL_TYPE: 2
+# MODEL_TYPE: 3
+# MODEL_TYPE: 4
+# MODEL_TYPE: 5 # slow
+
+RESULT_PATH: results # path to save samples
+
+SEED: 123
