@@ -1,8 +1,8 @@
-The source code of paper "VBF Net: Boundary Completion in Full Waveform Inversion using Fusion Networks".  
+The source code of paper "VIF Net: Interface Completion in Full Waveform Inversion using Fusion Networks".  
 
 
 Steps:  
-1. Create these two folders under "VBF-dev":  
+1. Create these two folders under "VIF-dev":  
 model_ws # models saved  
 results  # results saved  
 
@@ -12,7 +12,7 @@ pip install lpips
 
 3. Configure "config.yml"  
 
-4. Run "VBF.py"  
+4. Run "VIF.py"  
 
 
 Example:  
@@ -27,7 +27,7 @@ Configure "config.yml" with setting:
 2) MODEL_TYPE as you desired (train or test)  
 3) Uncomment "OpenFWI datasets"'s configuration code  
 
-Run "VBF.py" with:  
+Run "VIF.py" with:  
 1) model.train()  
 2) model.test(testID=37) # Generate the velocity model by conducting predictions on the 37th seismic test data. The velocity model file is then saved in the "results" folder.  
 
